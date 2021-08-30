@@ -72,6 +72,7 @@ public class TextIterator {
 
         //  5. Реализуйте свой Iterator для обхода списка в обратном порядке.
 
+
         //  6. Выведите на экран строки, номера которых задаются пользователем в произвольном порядке.
         int numLine = 0;
         try {
@@ -91,4 +92,6 @@ public class TextIterator {
         System.out.println("Введите номер строки которую необходимо вывести на экран: ");
         return scanner.nextInt();
     }
+
+    private class MyIterator{}
 }
