@@ -11,11 +11,11 @@ public class TerminalServer {
     private static TerminalServer instance;
     private static Set<ClientOfBank> clientsOfBank = new HashSet<>();
     static {
-        clientsOfBank.add(new ClientOfBank("Ivanov Ivan", 1200, 1234));
-        clientsOfBank.add(new ClientOfBank("Sergeev Sergey", 8200, 4321));
-        clientsOfBank.add(new ClientOfBank("Nikolaev Nikolay", 0, 7777));
-        clientsOfBank.add(new ClientOfBank("Denisov Denis", 300, 1212));
-        clientsOfBank.add(new ClientOfBank("Vasiliev Vasiliy", 1200, 3589));
+        clientsOfBank.add(new ClientOfBank("Ivanov Ivan", 1200, (byte) 1234));
+        clientsOfBank.add(new ClientOfBank("Sergeev Sergey", 8200, (byte) 4321));
+        clientsOfBank.add(new ClientOfBank("Nikolaev Nikolay", 0, (byte) 7777));
+        clientsOfBank.add(new ClientOfBank("Denisov Denis", 300, (byte) 1212));
+        clientsOfBank.add(new ClientOfBank("Vasiliev Vasiliy", 1200, (byte) 3589));
     }
 
     private TerminalServer(){}

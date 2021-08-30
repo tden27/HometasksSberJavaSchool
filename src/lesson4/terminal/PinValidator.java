@@ -28,6 +28,6 @@ public class PinValidator {
                 ViewMessage.viewMessage(e.getMessage());
             }
         }
-        return Integer.parseInt(String.valueOf(pinCode));
+        return Byte.parseByte(String.valueOf(pinCode));
     }
 }
