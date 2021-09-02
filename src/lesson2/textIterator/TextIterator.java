@@ -71,7 +71,11 @@ public class TextIterator {
         }
 
         //  5. Реализуйте свой Iterator для обхода списка в обратном порядке.
-
+        System.out.println("5");
+        MyIterator myIterator = new MyIterator(textList);
+        while (myIterator.hasPrevious()){
+            System.out.println(myIterator.previous());
+        }
 
         //  6. Выведите на экран строки, номера которых задаются пользователем в произвольном порядке.
         int numLine = 0;
@@ -93,5 +97,29 @@ public class TextIterator {
         return scanner.nextInt();
     }
 
-    private class MyIterator{}
+    private static class MyIterator{
+        List<?> list;
+        int cursor;       // index of next element to return
+        int lastRet = -1; // index of last element returned; -1 if no such
+
+        public MyIterator(List<?> list){
+            this.list = list;
+            cursor = list.size();
+        }
+
+        public boolean hasPrevious() {
+            return cursor != 0;
+        }
+
+        public Object previous() {
+            try {
+                int i = cursor - 1;
+                Object previous = list.get(i);
+                lastRet = cursor = i;
+                return previous;
+            } catch (IndexOutOfBoundsException e) {
+                throw new NoSuchElementException();
+            }
+        }
+    }
 }
