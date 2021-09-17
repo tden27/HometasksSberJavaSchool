@@ -3,6 +3,8 @@
   <component name="ProjectModuleManager">
     <modules>
       <module fileurl="file://$PROJECT_DIR$/HometasksSberJavaSchool.iml" filepath="$PROJECT_DIR$/HometasksSberJavaSchool.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6ArrayIterator/lesson6ArrayIterator.iml" filepath="$PROJECT_DIR$/lesson6ArrayIterator/lesson6ArrayIterator.iml" />
+      <module fileurl="file://$PROJECT_DIR$/lesson6SocialNetwork/lesson6SocialNetwork.iml" filepath="$PROJECT_DIR$/lesson6SocialNetwork/lesson6SocialNetwork.iml" />
     </modules>
   </component>
 </project>
