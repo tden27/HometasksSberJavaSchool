@@ -1,4 +1,4 @@
-package lesson6.arrayIterator;
+package lesson6;
 
 import org.junit.*;
 

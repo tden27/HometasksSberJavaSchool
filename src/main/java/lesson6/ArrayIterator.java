@@ -1,4 +1,4 @@
-package lesson6.arrayIterator;
+package lesson6;
 
 import java.util.Arrays;
 import java.util.Iterator;
